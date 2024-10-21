@@ -1,0 +1,323 @@
+div[id^='__qiankun_microapp_wrapper'] {
+    height: 100%;
+}
+
+// * {
+//     touch-action: pan-y;
+// }
+
+html,
+body {
+    min-width: 100px;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@layer {
+    .button {
+        border-radius: 30px;
+    }
+}
+
+#app-lottery .result {
+    ._pk1 {
+        background-color: #f7dd00;
+    }
+
+    ._pk2 {
+        background-color: #349bf2;
+    }
+
+    ._pk3 {
+        background-color: #505050;
+    }
+
+    ._pk4 {
+        background-color: #f79000;
+    }
+
+    ._pk5 {
+        background-color: #32fef7;
+    }
+
+    ._pk6 {
+        background-color: #6534f2;
+    }
+
+    ._pk7 {
+        background-color: #c1c1c1;
+    }
+
+    ._pk8 {
+        background-color: #ff3a39;
+    }
+
+    ._pk9 {
+        background-color: #9e0c0c;
+    }
+
+    ._pk10 {
+        background-color: #0ad429;
+    }
+
+    [class^='_pk'] {
+        background-image: inherit;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-family: 'DIN Alternate';
+        font-size: 16px;
+        border-radius: 1.67px;
+        margin-right: 2px;
+    }
+
+    ._ft1 {
+        background-color: #f7dd00;
+    }
+
+    ._ft2 {
+        background-color: #349bf2;
+    }
+
+    ._ft3 {
+        background-color: #505050;
+    }
+
+    ._ft4 {
+        background-color: #f79000;
+    }
+
+    ._ft5 {
+        background-color: #32fef7;
+    }
+
+    ._ft6 {
+        background-color: #6534f2;
+    }
+
+    ._ft7 {
+        background-color: #c1c1c1;
+    }
+
+    ._ft8 {
+        background-color: #ff3a39;
+    }
+
+    ._ft9 {
+        background-color: #9e0c0c;
+    }
+
+    ._ft10 {
+        background-color: #0ad429;
+    }
+
+    [class^='_ft'] {
+        background-image: inherit;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-family: Roboto-BlackItalic;
+        font-size: 16px;
+        border-radius: 1.67px;
+        margin-right: 2px;
+    }
+}
+
+[data-theme] {
+    .van-button {
+        border: none;
+        border-radius: 2px;
+    }
+    .van-field {
+        padding: 0px;
+        .van-field__body {
+            height: 100%;
+            input {
+                height: 100%;
+                padding: 0px 8px;
+            }
+        }
+    }
+
+    .van-dialog {
+        background: #ffffff;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        color: #464c54;
+        padding: 0px;
+        .van-dialog__header {
+            padding: 16px 0px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 21px;
+            color: #464c54;
+        }
+        .van-dialog__content {
+            border-bottom: none;
+        }
+        .van-dialog__footer {
+            padding: 10px 10px 10px 10px;
+            .van-dialog__cancel {
+                height: 40px;
+                background: #ffffff;
+                border: 1px solid rgba(60, 93, 157, 0.2);
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19px;
+                color: #60697a;
+                margin: 0px 10px 0px 0px;
+            }
+            .van-dialog__confirm {
+                height: 40px;
+                background: #1e8ef5;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19px;
+                color: #ffffff;
+                margin: 0px;
+            }
+        }
+        .van-hairline--top:after {
+            border-top-width: 0px;
+        }
+    }
+
+    .van-popup--bottom.van-popup--round {
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.rotate-25 {
+    -webkit-animation: spin 1s linear infinite;
+    animation: rotate-25 2.5s linear infinite;
+}
+
+/*定义动画*/
+@-webkit-keyframes rotate-25 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(180deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+@keyframes rotate-25 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(180deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+.begin-issue-popover {
+    .van-popover__arrow {
+        display: none;
+    }
+    .van-popover__content {
+        max-height: 400px;
+        width: 120px;
+        overflow: auto;
+        padding: 8px 0px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        .item {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            color: #464c54;
+            margin-bottom: 6px;
+            &.active {
+                color: #1e8ef5;
+            }
+        }
+    }
+}
+
+.settingPopup {
+    .title {
+        height: 70px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        background: #eff2f5;
+        .logo {
+            height: 40px;
+        }
+        .memberAccount {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            color: #484848;
+        }
+        .balance {
+            font-family: 'WeChat Sans Std';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 16px;
+            color: #f39035;
+        }
+    }
+    .wrapper {
+        height: 109px;
+        background: #eff2f5;
+        padding: 19px 0px;
+        .item {
+            margin-left: 10px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #565f6c;
+            .img {
+                height: 50px;
+                width: 50px;
+                margin-bottom: 4px;
+                background: #ffffff;
+                border-radius: 10px;
+            }
+        }
+        .line {
+            height: 70px;
+            width: 1px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .more {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            color: #a3a9b5;
+            text-align: center;
+        }
+    }
+    .footer {
+        height: 50px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #565f6c;
+    }
+}

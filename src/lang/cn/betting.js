@@ -1,0 +1,36 @@
+// 下注
+export default {
+    betting: {
+        period: '{No}期',
+        Betting: '受注中',
+        closed: '已关盘',
+        Closed3: '封盘',
+        Closed4: '关闭',
+        NoSales: '已停售',
+        selected: '已选中{num}注：',
+        EnterTheAmount: '输入金额',
+        Balance: '余额:',
+        Reset: '重置',
+        placeABet: '下注',
+        Odds: '赔率',
+        SelectTheBetAmount: '请选择下注金额！',
+        Cancel: '取消',
+        Confirm: '确认',
+        AllColors: '全部彩种',
+        Account: '账户',
+        AccountBalance: '账户余额',
+        LotteryDetail: '售: {workingTime} 频率: {minute} 分钟, 每天共{count}期',
+        No: '第 {No}  期',
+        Betting1: '受注中',
+        Closed1: '已关盘',
+        Discontinued: '已停售',
+        Closed2: '已封盘',
+        Integration: '整合',
+        Betting2: '投注',
+        Refill: '重填',
+        HowToPlay: '玩法说明',
+        Sumoddoreven: '和值/大小/单双',
+        Sumpoints: '和值点数',
+        Points: '点'
+    }
+};
