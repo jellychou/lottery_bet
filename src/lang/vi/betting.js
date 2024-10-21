@@ -1,0 +1,36 @@
+// 下注
+export default {
+  betting: {
+    period: '{No} giai đoạn',
+    Betting: 'Đặt cược',
+    closed: 'đóng và',
+    Closed3: 'đóng',
+    Closed4: 'tắt',
+    NoSales: 'ngừng cược',
+    selected: '{num} ghi chú đã được chọn:',
+    EnterTheAmount: 'Nhập số tiền',
+    Balance: 'Số dư',
+    Reset: 'Đặt lại',
+    placeABet: 'đặt cược',
+    Odds: 'Tỷ lệ cược',
+    SelectTheBetAmount: ' Vui lòng chọn số tiền đặt cược!！',
+    Cancel: 'hủy bỏ',
+    Confirm: ' Xác nhận',
+    AllColors: 'Tất cả các sổ xố',
+    Account: 'Tài khoản',
+    AccountBalance: 'Số dư tài khoản',
+    LotteryDetail: 'Bán hàng: {workingTime} Tần suất: {minute} phút, {count} tiết mỗi ngày',
+    No: 'Số {No}  ',
+    Betting1: 'Cá cược',
+    Closed1: 'ngừng cược',
+    Discontinued: 'Ngừng sản xuất',
+    Closed2: 'ngừng cược',
+    Integration: 'Tích hợp',
+    Betting2: 'Cá cược',
+    Refill: 'Nạp tiền',
+    HowToPlay: 'Cách chơi',
+    Sumoddoreven: 'Giá trị tổng là lớn nhỏ lẻ và chẵn',
+    Sumpoints: 'Tổng điểm',
+    Points: 'điểm'
+  }
+}

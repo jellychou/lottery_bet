@@ -1,0 +1,36 @@
+// 下注
+export default {
+  betting: {
+    period: '{No} period',
+    Betting: 'Betting',
+    closed: 'closed',
+    Closed3: 'Closed',
+    Closed4: 'Closed',
+    NoSales: 'no sales',
+    selected: '{num} note has been selected: ',
+    EnterTheAmount: 'Enter the amount',
+    Balance: ' Balance: ',
+    Reset: 'Reset',
+    placeABet: 'place a bet',
+    SelectTheBetAmount: 'Please select the bet amount!',
+    Odds: 'Odds',
+    Cancel: 'Cancel',
+    Confirm: 'Confirm',
+    AllColors: 'All colors',
+    Account: 'Account',
+    AccountBalance: 'Account balance',
+    LotteryDetail: 'Sales: {workingTime} Frequency: {minute} minute, {count} issues per day',
+    No: 'No. {No}',
+    Betting1: 'Betting',
+    Closed1: 'Closed',
+    Discontinued: 'Discontinued',
+    Closed2: 'Closed',
+    Integration: 'Integration',
+    Betting2: 'Betting',
+    Refill: 'Refill',
+    HowToPlay: 'How to play',
+    Sumoddoreven: 'The sum value is odd and even',
+    Sumpoints: 'Sum points',
+    Points: 'points'
+  }
+}

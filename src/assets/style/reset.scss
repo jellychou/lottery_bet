@@ -1,0 +1,222 @@
+[data-theme] {
+  // Vant UI 组件
+
+    // // navbar
+    // --van-nav-bar-background-color: var(--theme-background_3);
+    // --van-nav-bar-text-color: var(--van-white);
+
+    // // picker
+    // // 背景
+    // --van-picker-background-color: #212A35;
+    // // 选中文本
+    // --van-picker-confirm-action-color: var(--theme-primary);
+    // // 取消文本
+    // --van-picker-cancel-action-color: #BCCBD9;
+    // // 选项文本
+    // --van-picker-option-text-color: var(--van-white);
+    // // loading 背景遮罩
+    // --van-picker-loading-mask-color: rgba(255, 255, 255, .2);
+
+    // // 选择区域阴影背景遮罩
+    // .van-picker__mask {
+    //     background-image:unset
+    // }
+
+    // // 选中文本
+    // .van-picker-column__item--selected {
+    //     color: var(--theme-primary);
+    // }
+
+    // // 选中区域
+    // .van-hairline-unset--top-bottom {
+    //     background: var(--theme-block_active_bg);
+    //     background: rgba(214, 217, 221, 0.1);
+    //     // 隐藏边框线
+    //     &::after {
+    //         content: none;
+    //     }
+    // }
+
+    // // Cell
+    // // 背景
+    // --van-cell-group-background-color: none;
+    // --van-cell-background-color: var(--theme-card_bg_1);
+    // --van-cell-active-color: var(--theme-card_bg_2);
+    // // 标题
+    // --van-cell-text-color: var(--theme-paragraph_1);
+    // // 边框
+    // --van-cell-border-color: var(--theme-block_border);
+
+    // // Button
+    // // primary 按钮背景
+    // --van-button-primary-background-color: #20B25B;
+    // // primary 按钮边框
+    // --van-button-primary-border-color: #20B25B;
+    // // primary 按钮文字
+    // --van-button-primary-color: #FFFFFF;
+    // // 默认背景透明
+    // --van-button-default-background-color: transparent;
+    // --van-button-default-color: var(--van-white);
+    // // 圆角
+    // // --van-button-border-radius:20px
+    // // --van-button-round-border-radius: 999px;
+
+
+    // // Tabs
+    // // 未选中文本
+    // --van-tab-text-color: #BCCBD9;
+    // // 选中文本
+    // --van-tab-active-text-color: var(--van-white);
+    // // 背景色
+    // --van-tabs-nav-background: var(--theme-tab_bg);
+    // --van-tabs-nav-background-color: var(--theme-tab_bg);
+    // // 下划线
+    // --van-tabs-bottom-bar-color: #00DA53;
+
+    // // Field
+    // // 输入框 label 文本
+    // --van-field-label-color: var(--van-white);
+    --van-field-input-text-color: #60697a;
+
+    // // Switch
+    // // on 背景
+    // --van-switch-on-background-color: var(--theme-primary);
+    // // off 背景
+    // --van-switch-background-color: var(--theme-block_active_bg);
+
+    // // // Dialog
+    // // // 背景色
+    // // --van-dialog-background-color: var(--theme-background_2);
+    // // // 确认文本颜色
+    // // --van-dialog-confirm-button-text-color: var(--theme-primary);
+    // // // 有标题时的消息文本颜色
+    // // --van-dialog-has-title-message-text-color: var(--theme-paragraph_2);
+
+    // //分割线的颜色
+    // --van-divider-border-color: #2E3740;
+
+    // --van-button-loading-icon-size: 16px;
+
+    // 背景
+    --van-cell-group-background-color: none;
+    --van-cell-background-color: #ffffff;
+    --van-cell-active-color: #f1f1f1;
+    // 标题
+    --van-cell-text-color: #1E8EF5;
+    // 边框
+    --van-cell-border-color: rgba(60, 93, 157, 0.2);
+
+
+    .van-dialog {
+        color: #464C54;
+        border-radius:10px;
+        padding: 0px 10px;
+        background: #fff;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+        [class*=van-hairline]:after{
+            content: none;
+        }
+        .van-dialog__content{
+            // border-bottom: 1px solid #3A414F;
+            .van-dialog__message{
+                font-family: 'PingFang SC';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #60697A;
+            }
+        }
+        .van-button{
+            height: 40px;
+            margin: 10px 0px;
+            border-radius: 5px;
+            font-family: 'PingFang SC';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .van-dialog__cancel{
+            color: #60697A;
+            background: #FFFFFF;
+            margin-right: 10px;
+            border: 1px solid rgba(60, 93, 157, 0.2);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .van-dialog__confirm{
+            background: #1E8EF5;
+            color: #fff;
+        }
+        &.danger{
+            .van-dialog__confirm{
+                background: #DF4530;
+            }
+        }
+    }
+
+    // .van-empty__description {
+    //     color: #8596A2;
+    // }
+
+    // .child-view {
+    //     background-color: #1A222A;
+    // }
+
+    .van-button{
+        border-radius: 2px;
+    }
+    // #app{
+    //     background: #1c2128;
+    // }
+    // @keyframes show-hide {
+    //     0%, 100% {
+    //         opacity: 0;
+    //        }
+    //        50% {
+    //         opacity: 1;
+    //        }
+
+    // }
+
+    // input::input-placeholder {
+    //         color: #8696a280;
+    //         font-weight: 400;
+    //         font-size: 15px;
+    //     }
+    //     // 谷歌
+    //     input::-webkit-input-placeholder {
+    //         color: #8696a280;
+    //         font-weight: 400;
+    //         font-size: 15px;
+    //     }
+    //     // 火狐19+版本
+    //     input::-moz-placeholder {
+    //         /* Mozilla Firefox 19+ */
+    //         color: #8696a280;
+    //         font-weight: 400;
+    //         font-size: 15px;
+    //     }
+    //     // 火狐4-18版本
+    //     input:-moz-placeholder {
+    //         /* Mozilla Firefox 4 to 18 */
+    //         color: #8696a280;
+    //         font-weight: 400;
+    //         font-size: 15px;
+    //     }
+    //     // IE10-11版本
+    //     input:-ms-input-placeholder {
+    //         /* Internet Explorer 10-11 */
+    //         color: #8696a280;
+    //         font-weight: 400;
+    //         font-size: 15px;
+    //     }
+
+
+
+
+
+  
+
+
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/ico/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    </head>
+
+    <body data-theme>
+        <div id="app-lottery"></div>
+        <script>
+            var lastTouchEnd = 0;
+            document.documentElement.addEventListener(
+                'touchend',
+                function (event) {
+                    var now = Date.now();
+                    if (now - lastTouchEnd <= 300) {
+                        event.preventDefault();
+                    }
+                    lastTouchEnd = now;
+                },
+                false
+            );
+
+            window.onload = function () {
+                // 阻止双击放大
+                var lastTouchEnd = 0;
+                var startX, startY;
+                document.addEventListener('touchstart', function (event) {
+                    startX = event.targetTouches[0].pageX;
+                    startY = event.targetTouches[0].pageY;
+                    if (event.touches.length > 1) {
+                        event.preventDefault();
+                    }
+                });
+
+                document.addEventListener(
+                    'touchmove',
+                    function (event) {
+                        event.preventDefault();
+                        // if (event.touches.length > 1) {
+                        //     event.preventDefault();
+                        // }
+                        // var moveX = event.targetTouches[0].pageX;
+                        // var moveY = event.targetTouches[0].pageY;
+                        //
+                        // if (Math.abs(moveX-startX) > Math.abs(moveY-startY)) {
+                        //     event.preventDefault();
+                        // }
+                    },
+                    false
+                );
+
+                document.addEventListener(
+                    'touchend',
+                    function (event) {
+                        if (event._isScroller) return;
+                        var now = new Date().getTime();
+                        if (now - lastTouchEnd <= 300) {
+                            event.preventDefault();
+                        }
+                        lastTouchEnd = now;
+                    },
+                    false
+                );
+
+                // 阻止双指放大
+                document.addEventListener('gesturestart', function (event) {
+                    event.preventDefault();
+                });
+            };
+        </script>
+        <script type="module" src="/src/main.js"></script>
+        <script type="text/javascript" src="/jsencrypt.js"></script>
+    </body>
+</html>
